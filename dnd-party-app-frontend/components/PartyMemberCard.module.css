@@ -1,0 +1,96 @@
+/* StAuth10222: I Adoria Stevens, 000754661 certify that this material is my original work. 
+   No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 2px solid #e2e8f0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: #7c3aed;
+}
+
+.cardHeader {
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.memberName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.02em;
+}
+
+.memberLevel {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.375rem 0.875rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cardBody {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem 1rem;
+  background: #f8fafc;
+  border-radius: 6px;
+  border-left: 4px solid #7c3aed;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: #475569;
+  min-width: 80px;
+  font-size: 0.95rem;
+}
+
+.infoValue {
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .cardHeader {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .memberName {
+    font-size: 1.25rem;
+  }
+
+  .cardBody {
+    padding: 1rem;
+  }
+}

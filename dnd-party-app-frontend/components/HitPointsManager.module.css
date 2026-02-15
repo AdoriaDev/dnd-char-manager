@@ -1,0 +1,115 @@
+/* StAuth10222: I Adoria Stevens, 000754661 certify that this material is my original work. 
+   No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+
+.hpManager {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+}
+
+.hpDisplay {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.hpLabel {
+  font-weight: 600;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.hpValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22c55e;
+  min-width: 3rem;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  background: white;
+  border-radius: 6px;
+  border: 2px solid #86efac;
+}
+
+.hpValue.lowHp {
+  color: #dc2626;
+  border-color: #fca5a5;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.hpControls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hpControls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 50px;
+}
+
+.hpControls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnSmall {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.btnSmall:hover:not(:disabled) {
+  background: #cbd5e1;
+  transform: translateY(-2px);
+}
+
+.btnDamage {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: white;
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.3);
+}
+
+.btnDamage:hover:not(:disabled) {
+  background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.4);
+}
+
+.btnHeal {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  box-shadow: 0 2px 4px rgba(34, 197, 94, 0.3);
+}
+
+.btnHeal:hover:not(:disabled) {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(34, 197, 94, 0.4);
+}
+
+.btnSmall:active:not(:disabled),
+.btnDamage:active:not(:disabled),
+.btnHeal:active:not(:disabled) {
+  transform: translateY(0);
+}

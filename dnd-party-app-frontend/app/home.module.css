@@ -1,0 +1,88 @@
+/* StAuth10222: I Adoria Stevens, 000754661 certify that this material is my original work. 
+   No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #c9b0f0;
+  color:  #1e293b;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Georgia', serif;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formSection {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.membersSection {
+  margin-top: 3rem;
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #334155;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid #7c3aed;
+  font-family: 'Georgia', serif;
+}
+
+.memberGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 12px;
+  border: 2px dashed #cbd5e1;
+  color: #425267;
+  font-size: 1.125rem;
+}
+
+.emptyState p {
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.5rem;
+  }
+
+  .memberGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.75rem;
+  }
+}
