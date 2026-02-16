@@ -1,5 +1,3 @@
-// StAuth10222: I Adoria Stevens, 000754661 certify that this material is my original work.
-
 import Link from 'next/link';
 import styles from "./nav.module.css";
 

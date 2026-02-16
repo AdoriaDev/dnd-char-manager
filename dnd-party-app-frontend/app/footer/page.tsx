@@ -1,7 +1,5 @@
-// StAuth10222: I Adoria Stevens, 000754661 certify that this material is my original work. 
-// No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.
-
 import styles from './footer.module.css';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -17,8 +15,8 @@ export default function Footer() {
         <div className={styles.footerSection}>
           <h3 className={styles.footerTitle}>Quick Links</h3>
           <ul className={styles.footerLinks}>
-            <li><a href="/">Home</a></li>
-            <li><a href="/filter/all">Classes</a></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/filter/all">Classes</Link></li>
           </ul>
         </div>
 

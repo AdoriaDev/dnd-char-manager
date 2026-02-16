@@ -1,0 +1,17 @@
+{
+  "name": "dnd-char-manager",
+  "version": "1.0.0",
+  "description": "Video Link: https://youtu.be/5I4SUnfZGGQ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd dnd-party-app-backend && npm run start\" \"cd dnd-party-app-frontend && npm run dev\"",
+    "start": "concurrently \"cd dnd-party-app-backend && npm run start\" \"cd dnd-party-app-frontend && npm run build && npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
